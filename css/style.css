@@ -1,0 +1,13 @@
+.inner-header {
+  text-align: center;
+}
+
+.img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+#title {
+  font-size: 4em;
+}
