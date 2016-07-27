@@ -2,13 +2,60 @@
   text-align: center;
 }
 
-.content-header {
+.active {
   height: 380px;
-  background: url(../images/header.jpg);
-  background-size: cover;
   color: #fff;
   font-size: 2.5em;
   position: relative;
+}
+
+#one {
+  background: url(../images/header.jpg);
+  background-size: cover;
+}
+
+#two {
+  background: url(../images/header2.jpg);
+  background-size: cover;
+}
+
+#three {
+  background: url(../images/header3.jpg);
+  background-size: cover;
+  background-position: 5px;
+}
+
+#left {
+  float: left;
+  position: relative;
+  z-index: 99999;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 380px;
+  padding-left: 5px;
+}
+
+#right {
+  float: right;
+  position: relative;
+  z-index: 99999;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 380px;
+  padding-right: 5px;
+}
+
+.content-header {
+  display: none;
+}
+
+.btn-primary:hover {
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
 }
 
 .img {
@@ -19,6 +66,7 @@
 
 #title {
   font-size: 4em;
+  font-family: bungee shade;
 }
 
 .parent-header {
@@ -29,13 +77,30 @@
   color: #fff;
 }
 
+.subtitle-header {
+  margin-top: 20px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
 #subtitle {
   text-align: center;
   font-size: 2em;
+  margin: 0;
+  font-family: raleway;
 }
 
 .gallery-content {
   text-align: center;
+}
+
+.highlight {
+  background-color: cornflowerblue;
+}
+
+.btn-primary {
+  background-color: inherit;
+  border-color: inherit;
 }
 
 .content-inner {
@@ -43,6 +108,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: raleway;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -60,5 +127,28 @@
 @media (max-width: 401px) {
   #title {
     font-size: 2.5em;
+  }
+}
+
+@media (max-width: 992px) {
+  #title {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 699px) {
+  #title {
+    font-size: 2.9em;
+  }
+}
+
+@media (max-width: 676px) {
+  #title {
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 653px) {
+  .subtitle-header {
+    padding-top: 40px;
   }
 }
