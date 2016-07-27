@@ -39,12 +39,16 @@ carousel = (function(){
 })();
 
 
-
-
-
-// document.getElementById('one').style.background = 'url(images/header2.jpg)';
-
-
-// two.style.background = 'url(images/header2.jpg)';
-// two.classList.add('active');
-// three.style.background = 'url(images/header3.jpg)';
+window.onload = function move() {
+    var elem = document.getElementById("bar");
+    var width = 1;
+    var id = setInterval(frame, 50);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+    }
+};
