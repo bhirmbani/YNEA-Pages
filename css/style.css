@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+body {
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+
 .active {
   height: 380px;
   color: #fff;
@@ -75,12 +81,13 @@
     position: absolute;
     width: 0%;
     height: 100%;
-    background-color: cornflowerblue;
+    background-color: #E9BA37;
 }
 
 #title {
   font-size: 4em;
   font-family: bungee shade;
+  color: #695F5B;
 }
 
 .parent-header {
@@ -102,6 +109,7 @@
   font-size: 2em;
   margin: 0;
   font-family: raleway;
+  letter-spacing: 2px;
 }
 
 .gallery-content {
@@ -109,7 +117,7 @@
 }
 
 .highlight {
-  background-color: cornflowerblue;
+  background-color: #E9BA37;
 }
 
 .btn-primary {
@@ -124,6 +132,8 @@
   transform: translate(-50%, -50%);
   font-family: raleway;
   font-weight: bold;
+  color: aliceblue;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
